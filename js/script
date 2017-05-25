@@ -1,0 +1,44 @@
+
+
+<div id="videodiv" style='display: none'> Some embedded video code</div>
+
+     <div id="videodiv2" style='display: none'> Different Embedded video code</div>
+
+     <div id="videoPlayback"> The div where all the embedded videos will end up loading</div>     
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+      <script type="text/javascript">
+      var sourceDiv;
+      var targetDiv;
+      function playVideo(sourceId, targetId) {
+      sourceDiv=$("#"+sourceId);
+      targetDiv=$("#"+targetId);
+      targetDiv.html(sourceDiv.html());
+       }
+      </script>
+
+<select id="videos"><option selected="selected" >Please Select...</option>
+<option value="videodiv">Video Div1</option>
+<option value="videodiv2">Video Div2</option>
+</select>
+
+
+<script type="text/javascript">
+
+function videoChanged() {
+    //var videoSelectList = $('select#videos');
+    var selectedValue = $('#videos').val();
+
+    //alert(selectedValue);
+
+    if (selectedValue != 'Please Select...') {
+        playVideo(selectedValue,'videoPlayback');
+    }
+}
+
+$(function() {
+    //alert('my alert');
+    $('select#videos').change(videoChanged);
+});
+
+</script>

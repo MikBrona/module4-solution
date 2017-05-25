@@ -1,0 +1,85 @@
+header {
+	margin-top: 75px;
+}
+
+h1 {
+	font-family: "Comfortaa";
+	margin-bottom: 25px;
+}
+
+.cover-pics {
+    text-align: center;
+}
+
+.cover-pics img {
+	height: 200px;
+	width: 200px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+.cover-pics img:hover {
+	    box-shadow: 0px 0px 3px 3px grey;
+}
+
+#en, #to, #tre {
+	margin-top: 25px;
+	color: grey;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #DDDDDD;
+  text-align: center;
+}
+
+
+/***********SPROG****************/
+
+span {
+	padding-left: 50px;
+}
+
+.billed-spalter img {
+	border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.billed-spalter img:hover {
+	    box-shadow: 0px 0px 3px 3px grey;
+}
+.title {
+	font-size: 1.8em;
+	font-family: "Comfortaa";
+	display: inline;
+}
+
+.foreign-title {
+	float: right;
+	padding: 35px; 
+	font-size: 25px;
+	font-family: "Comfortaa";
+	color: grey;
+	display: inline-block;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+
+/*******************Historie*********************/
